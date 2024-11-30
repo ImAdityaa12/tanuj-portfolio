@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { Menu } from "lucide-react";
 const Navbar = () => {
   const links = [
     {
@@ -36,7 +36,7 @@ const Navbar = () => {
             className="object-contain"
           />
         </div>
-        <div>
+        <div className="hidden sm:block">
           {links.map((link) => (
             <Link
               href={link.href}
@@ -47,6 +47,10 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+        <Menu
+          className="sm:hidden text-black border border-black p-1 rounded-md"
+          size={40}
+        />
       </div>
     </div>
   );
