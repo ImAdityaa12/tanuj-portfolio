@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="h-[calc(100vh-80px)]">
+    <div className="h-[calc(100vh-80px)] max-w-[1200px] mx-auto">
       <div className="flex items-center md:gap-12 h-[80%] px-10 ">
         <div className="max-w-[500px] flex flex-col gap-5">
           <p className="flex font-semibold tracking-wide">
@@ -18,10 +18,10 @@ const HeroSection = () => {
             Fashion &<div>UI-UX Designer</div>
           </div>
           <div className="flex items-center gap-4">
-            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold">
+            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all">
               Resume
             </button>
-            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold">
+            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all">
               E-Mail
             </button>
           </div>
@@ -31,7 +31,7 @@ const HeroSection = () => {
             expertise to a company.
           </p>
         </div>
-        <div className="relative w-[70%] h-[70%] pointer-events-none">
+        <div className="relative w-[70%] h-[70%] pointer-events-none -z-10">
           <Image
             src={"/hero-section-image.svg"}
             fill

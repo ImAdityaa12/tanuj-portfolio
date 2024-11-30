@@ -26,25 +26,27 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="w-full h-[80px] flex items-center px-4 justify-between">
-      <div className="relative w-[50px] h-[50px]">
-        <Image
-          src={"/logo.svg"}
-          layout="fill"
-          alt="logo"
-          className="object-contain"
-        />
-      </div>
-      <div>
-        {links.map((link) => (
-          <Link
-            href={link.href}
-            key={link.href}
-            className="px-4 text-sm tracking-wide"
-          >
-            {link.name}
-          </Link>
-        ))}
+    <div className="fixed w-full top-0 bg-white shadow-sm shadow-black/[0.05]z-[50]">
+      <div className="w-full h-[80px] flex items-center px-4 justify-between max-w-[1440px] mx-auto">
+        <div className="relative w-[50px] h-[50px]">
+          <Image
+            src={"/logo.svg"}
+            layout="fill"
+            alt="logo"
+            className="object-contain"
+          />
+        </div>
+        <div>
+          {links.map((link) => (
+            <Link
+              href={link.href}
+              key={link.href}
+              className="px-4 text-sm tracking-wide"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

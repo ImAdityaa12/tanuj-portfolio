@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased max-w-[1440px] mx-auto`}>
+      <body className={`${inter.className} antialiased `}>
         <Navbar />
-        <main className="max-w-[1200px] mx-auto">{children}</main>
+        <main className="mt-[80px]">{children}</main>
       </body>
     </html>
   );
