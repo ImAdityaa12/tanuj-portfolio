@@ -3,11 +3,13 @@ import React from "react";
 
 const SubHero = () => {
   return (
-    <div className="bg-[#F7F7FA] h-[700px] w-full">
+    <div className="bg-[#F7F7FA] h-[700px] w-full max-sm:px-4">
       <div className="flex flex-col items-center justify-center h-full gap-7">
         <Image src={"/bulb.svg"} width={40} height={40} alt="contact" />
-        <h1 className="text-3xl font-bold">Let’s build something together.</h1>
-        <p className="max-w-[730px] text-center text-[#333333]">
+        <h1 className="text-xl sm:text-3xl font-bold text-center">
+          Let&apos;s build something together.
+        </h1>
+        <p className="max-w-[730px] text-center text-[#333333] max-sm:text-xs">
           Seasoned with 3.5 years of my institute exposure as a{" "}
           <span className="font-bold">fashion</span> and a
           <span className="font-bold"> UI-UX designer.</span> I&apos;ve worked
@@ -18,7 +20,7 @@ const SubHero = () => {
           and creative mindset drives me to create prototypes that resonate with
           users and drive success.
         </p>
-        <p>
+        <p className="text-center max-sm:text-xs">
           Recently, crafted my experiences at{" "}
           <span className="text-[#4BB543]">Team Pumpkin.</span>
         </p>
