@@ -22,29 +22,46 @@ const ExpertiseSection = () => {
             <Image src={"/person-thinking.svg"} fill alt="expertise" />
           </div>
         </div>
-        <div className="mt-[40px] w-full grid grid-cols-3">
-          <div className="flex flex-col items-start gap-4">
-            <Image src={"/figma.svg"} width={60} height={60} alt="figma" />
+        <div className="mt-[40px] w-full grid grid-cols-3 gap-12">
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/figma.svg"}
+              width={45}
+              height={45}
+              alt="figma"
+              className="h-1/2"
+            />
             <h1 className="font-bold text-xl">Figma</h1>
-            <p>
-              3+ years of experience with Figma, I’m now pretty much a pro (or
-              close enough)!
+            <p className="text-black/80">
+              3+ years of experience with Figma, I&apos;m now pretty much a pro
+              (or close enough)!
             </p>
           </div>
-          <div className="flex flex-col items-start gap-4">
-            <Image src={"/figma.svg"} width={60} height={60} alt="figma" />
-            <h1 className="font-bold text-xl">Figma</h1>
-            <p>
-              3+ years of experience with Figma, I’m now pretty much a pro (or
-              close enough)!
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/adobe-suite.svg"}
+              width={60}
+              height={60}
+              alt="figma"
+              className="h-1/2"
+            />
+            <h1 className="font-bold text-xl">Adobe Suite</h1>
+            <p className="text-black/80">
+              Using adobe suit for last 3+ years. Fav: Illustrator, Photoshop,
+              InDesign, XD.
             </p>
           </div>
-          <div className="flex flex-col items-start gap-4">
-            <Image src={"/figma.svg"} width={60} height={60} alt="figma" />
-            <h1 className="font-bold text-xl">Figma</h1>
-            <p>
-              3+ years of experience with Figma, I’m now pretty much a pro (or
-              close enough)!
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/procreate.svg"}
+              width={80}
+              height={80}
+              alt="figma"
+              className="h-1/2"
+            />
+            <h1 className="font-bold text-xl">Procreate</h1>
+            <p className="text-black/80">
+              I am an expert in using Procreate. Knowledge of CLO-3D as well.
             </p>
           </div>
         </div>
