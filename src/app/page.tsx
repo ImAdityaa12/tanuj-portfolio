@@ -1,4 +1,5 @@
 import AvailableSection from "@/components/available-section";
+import BlackBar from "@/components/black-bar";
 import BringSection from "@/components/bring-section";
 import ExpertiseSection from "@/components/expertise-section";
 import HelpSection from "@/components/help-section";
@@ -29,6 +30,7 @@ export default function Home() {
       <div className="max-w-[1440px] mx-auto">
         <AvailableSection />
       </div>
+      <BlackBar />
     </div>
   );
 }
