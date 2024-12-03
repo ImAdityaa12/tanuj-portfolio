@@ -17,6 +17,10 @@ const HeroSection = () => {
           <div className="text-5xl font-bold tracking-wider max-w-[400px] max-sm:text-3xl">
             Fashion &<div>UI-UX Designer</div>
           </div>
+          <h1>
+            for startups to large organizations, let’s transform complex design
+            problems into simple solutions.
+          </h1>
           <div className="flex items-center gap-4">
             <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all">
               Resume
