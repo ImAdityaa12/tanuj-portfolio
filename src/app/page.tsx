@@ -2,6 +2,7 @@ import BringSection from "@/components/bring-section";
 import ExpertiseSection from "@/components/expertise-section";
 import HelpSection from "@/components/help-section";
 import HeroSection from "@/components/hero-section";
+import MoreAboutSection from "@/components/more-about-section";
 import ProjectsSection from "@/components/projects-section";
 import SubHero from "@/components/sub-hero";
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
         <BringSection />
       </div>
       <HelpSection />
+      <div className="max-w-[1440px] mx-auto">
+        <MoreAboutSection />
+      </div>
     </div>
   );
 }
