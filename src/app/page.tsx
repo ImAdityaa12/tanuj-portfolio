@@ -1,6 +1,7 @@
 import AvailableSection from "@/components/available-section";
 import BlackBar from "@/components/black-bar";
 import BringSection from "@/components/bring-section";
+import CopyrightSection from "@/components/copyright-section";
 import ExpertiseSection from "@/components/expertise-section";
 import HelpSection from "@/components/help-section";
 import HeroSection from "@/components/hero-section";
@@ -31,6 +32,7 @@ export default function Home() {
         <AvailableSection />
       </div>
       <BlackBar />
+      <CopyrightSection />
     </div>
   );
 }
