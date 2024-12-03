@@ -5,7 +5,7 @@ const ExpertiseSection = () => {
   return (
     <div className="bg-[#F7F7FA] h-[700px] w-full max-sm:px-4">
       <div className="max-w-[1100px] mx-auto">
-        <div className="w-full flex h-[300px] items-center">
+        <div className="relative w-full flex h-[300px] items-center">
           <div className="w-full">
             <h1 className="font-bold text-4xl max-w-[600px]">
               Let&apos;s start new journey with me, I&apos;ve{" "}

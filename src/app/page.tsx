@@ -1,3 +1,4 @@
+import BringSection from "@/components/bring-section";
 import ExpertiseSection from "@/components/expertise-section";
 import HeroSection from "@/components/hero-section";
 import ProjectsSection from "@/components/projects-section";
@@ -13,6 +14,9 @@ export default function Home() {
         <ProjectsSection />
       </div>
       <ExpertiseSection />
+      <div className="max-w-[1440px] mx-auto">
+        <BringSection />
+      </div>
     </div>
   );
 }
