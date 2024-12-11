@@ -3,9 +3,10 @@ import { projects } from "@/data/projects";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
-const ProjectsPage = () => {
+// Wrapper component to handle Suspense
+function ProjectsPageContent() {
   const searchParams = useSearchParams();
   const [categoryProjects, setCategoryProjects] = useState<
     {
@@ -17,7 +18,6 @@ const ProjectsPage = () => {
       desc: string;
     }[]
   >([]);
-
   const category = searchParams.get("category");
   useEffect(() => {
     if (category) {
@@ -39,6 +39,7 @@ const ProjectsPage = () => {
       setCategoryProjects(allProjects);
     }
   }, [category]);
+
   return (
     <div className="max-w-[1200px] mx-auto mb-[172px]">
       {category && (
@@ -57,7 +58,7 @@ const ProjectsPage = () => {
             <p className="mt-6">
               {projects[category as keyof typeof projects].heading}
             </p>
-            <button className=" border border-[#D5D5D5] py-2 px-5 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all mt-6">
+            <button className="border border-[#D5D5D5] py-2 px-5 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all mt-6">
               View All Works
             </button>
           </div>
@@ -72,7 +73,17 @@ const ProjectsPage = () => {
         ))}
     </div>
   );
+}
+
+// Main page component wrapped in Suspense
+const ProjectsPage = () => {
+  return (
+    <Suspense fallback={<div className="min-h-screen">Loading...</div>}>
+      <ProjectsPageContent />
+    </Suspense>
+  );
 };
+
 function ProjectCard({
   image,
   badge,
@@ -117,4 +128,5 @@ function ProjectCard({
     </div>
   );
 }
+
 export default ProjectsPage;
