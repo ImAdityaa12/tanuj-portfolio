@@ -29,7 +29,7 @@ const ProjectTypeCard = ({
         <h1 className="font-bold">{title}</h1>
         <p className="mt-1 line-clamp-3">{desc}</p>
         <Link
-          href={url}
+          href={`/projects?category=${url}`}
           className="flex items-center gap-2 text-[#4BB543] font-semibold mt-[25px]"
         >
           View Projects
