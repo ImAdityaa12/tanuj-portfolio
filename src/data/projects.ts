@@ -2,6 +2,7 @@ export const projects = {
   ui_ux: {
     heading:
       "Exploring the Interaction of Design and Innovation: Here are a few selected projects that highlight my passion for designing intuitive and impactful user experiences.",
+    image: "/ui-ux-project.svg",
     project_list: [
       {
         image: "/bridging-the-gap.svg",
@@ -48,6 +49,7 @@ export const projects = {
   fashion: {
     heading:
       "Fashion Meets Aesthetics and Sustainability: A Curated Collection of Projects Reflecting My Passion for Designing Thoughtful, Impactful, and Eco-Conscious Fashion Experiences.",
+    image: "/fashion-category.svg",
     project_list: [
       {
         image: "/fashion1.svg",
@@ -94,6 +96,7 @@ export const projects = {
   research_project: {
     heading:
       "Collection of document, including research papers and craft documentation. Each project reflects my journey of exploring ideas, culture, and design through detailed research and storytelling.",
+    image: "/research-category.svg",
     project_list: [
       {
         image: "/research1.svg",

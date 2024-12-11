@@ -63,7 +63,11 @@ function ProjectsPageContent() {
             </button>
           </div>
           <div className="relative w-[400px] h-[280px]">
-            <Image src={"/ui-ux-project.svg"} alt="ui-ux-project" fill />
+            <Image
+              src={projects[category as keyof typeof projects].image}
+              alt={category}
+              fill
+            />
           </div>
         </div>
       )}
