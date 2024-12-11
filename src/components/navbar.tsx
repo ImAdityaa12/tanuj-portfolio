@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const links = [
     {
@@ -25,6 +27,7 @@ const Navbar = () => {
       href: "https://www.behance.net/tanujpandey2",
     },
   ];
+  const pathname = usePathname();
   return (
     <div className="fixed w-full top-0 bg-white shadow-sm shadow-black/[0.05] z-[99999]">
       <div className="w-full h-[80px] flex items-center px-4 justify-between max-w-[1440px] mx-auto">
@@ -41,7 +44,9 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.href}
-              className="px-4 text-sm tracking-wide"
+              className={`px-4 text-sm tracking-widen ${
+                pathname === link.href ? "font-bold" : ""
+              }`}
             >
               {link.name}
             </Link>
