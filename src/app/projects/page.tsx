@@ -38,15 +38,18 @@ const ProjectsPage = () => {
       );
       setCategoryProjects(allProjects);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [category]);
   return (
     <div className="max-w-[1200px] mx-auto mb-[172px]">
       {category && (
         <div className="flex items-center gap-[150px] mt-[112px]">
           <div className="max-w-[650px]">
             <h1 className="text-[#4BB543] font-bold">
-              {category ? category.toUpperCase().replace(/_/g, "-") : ""}
+              {category === "ui_ux"
+                ? category.toUpperCase().replace(/_/g, "-")
+                : category === "fashion"
+                ? "Fashion"
+                : "Research Project"}
             </h1>
             <h1 className="mt-[10px] text-3xl font-bold">
               {categoryProjects.length} Projects
