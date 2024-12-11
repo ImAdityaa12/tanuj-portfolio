@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -22,10 +24,19 @@ const HeroSection = () => {
             problems into simple solutions.
           </h1>
           <div className="flex items-center gap-4">
-            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all">
+            <Link
+              href="/resume.pdf"
+              download={true}
+              className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all"
+            >
               Resume
-            </button>
-            <button className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all whitespace-nowrap">
+            </Link>
+            <button
+              className="border border-[#D5D5D5] py-5 px-10 rounded-md font-bold hover:bg-[#0A0A0A] hover:text-white transition-all whitespace-nowrap"
+              onClick={() => {
+                window.location.href = "mailto:tanujpandey0303@gmail.com";
+              }}
+            >
               E-Mail
             </button>
           </div>
